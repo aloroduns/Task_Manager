@@ -14,6 +14,10 @@ newTaskForm.addEventListener('submit', (event) => {
 
     // Select the inputs
     const newTaskNameInput = document.querySelector('#newTaskNameInput');
+    //querySelector() returns the first element that matches the selector. querySelectorAll() 
+    //returns an array of DOM Elements. Call these methods differently depending on whether you 
+    //want to access elements the component owns or access elements passed via slots.
+    
     const newTaskDescription = document.querySelector('#newTaskDescription');
     const newTaskAssignedTo = document.querySelector('#newTaskAssignedTo');
     const newTaskDueDate = document.querySelector('#newTaskDueDate');
@@ -126,6 +130,4 @@ tasksList.addEventListener('click', (event) => {
 function validFormFieldInput(data){
     
 }
-
-let alert = document.getElementById('alert')
 alert.style.display = 'none'
