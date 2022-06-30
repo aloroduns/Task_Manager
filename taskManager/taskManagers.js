@@ -45,10 +45,7 @@ newTaskForm.addEventListener('submit', (event) => {
     } else {
         alert.style.display = 'none'
     }
-
     
-
-
     taskManager.addTask(name, description, assignedTo, dueDate);
 
     // Render the tasks
